@@ -10,6 +10,7 @@
  */
 
 function addOne(x) {
+  return x+1
 }
 
 
@@ -19,6 +20,7 @@ function addOne(x) {
  */
 
 function largest(lst) {
+  return Math.max(...lst)
 }
 
 /**
@@ -33,6 +35,8 @@ function largest(lst) {
  */
 
 function fact(n) {
+  if (n === 0) return 1
+  return fact(n-1)*n
 }
 
 /**
@@ -57,4 +61,6 @@ function fact(n) {
   */
 
 function fib(n) {
+  if (n <= 1) return n
+  return fib(n-1)+fib(n-2)
 }

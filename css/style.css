@@ -1,34 +1,46 @@
 #me {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 #bot {
-    align-items: center;
-    text-align: center;
+  align-items: center;
+  text-align: center;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+  /* list-style-type: none; */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border: 5px solid black;
+  animation-name: box;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+@keyframes box{
+  0% {border-color: red;}
+  25% {border-color: yellow;}
+  50% {border-color: orange;}
+  75% {border-color: plum;}
+  100% {border-color: red;}
+}
