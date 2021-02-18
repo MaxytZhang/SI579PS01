@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Set 4</title>
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+    <link rel="stylesheet" href="css/ps4.css">
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js" defer></script>
+    <script src="js/ps4.js" defer></script>
+    
+</head>
+<body>
+    <h1>TO-DO LIST</h1>
+    <main>
+        <input type="text" id="item" placeholder="Create a new item..." data-title="New Item" data-intro="Input the description for the new item. Description can't be empty">
+        <div>
+            <button id="add_btn" data-title="Add Button" data-intro="Click to add new item to the list">Add Item</button>
+            <button id="reset_btn" data-title="Reset Button" data-intro="Click to clear the whole list">Reset List</button>
+            <button id="finish_btn" data-title="Finish Button" data-intro="Select checkboxes of the items you have finished and click to remove them from the list">Finish Items</button>
+            <button id="highlight_btn" data-title="Highlight Button" data-intro="Select checkboxes of the items you want to highlight and click to highlight them">Highlight Items</button>
+        </div>
+        <ol id="ordered_list">
+
+        </ol>
+    </main>
+</body>
+</html>
