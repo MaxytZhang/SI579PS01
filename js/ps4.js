@@ -24,6 +24,7 @@ add_btn.addEventListener("click", () => {
     // checkbox.value = "value";
     checkbox.id = `check${i}`;
     node.appendChild(checkbox);
+    node.classList.add("list-group-item");
     ordered_list.appendChild(node);
     item.value = null;
 })
@@ -60,7 +61,7 @@ highlight_btn.addEventListener("click", () => {
     items.forEach(it => {
         let checkbox = it.getElementsByTagName("input")[0];
         if (checkbox.checked){
-            it.classList.add("highlight");
+            it.classList.add("active");
             checkbox.checked = false;
         }
     });
@@ -69,13 +70,13 @@ highlight_btn.addEventListener("click", () => {
 create_list = () => {
     for (let i=0; i <to_do_list.length; i++){
         let node = document.createElement('li');
-        node.appendChild(document.createTextNode(to_do_list[i]));
         let checkbox = document.createElement('input');
         checkbox.type = "checkbox";
         checkbox.name = `checkbox${i}`;
         // checkbox.value = "value";
         checkbox.id = `check${i}`;
         node.appendChild(checkbox);
+        node.appendChild(document.createTextNode(to_do_list[i]));
         ordered_list.appendChild(node);
     }
 }
